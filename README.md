@@ -7,3 +7,4 @@ Date: 2024-09-01
 * ansible.builtin.ping
 * ansible.builtin.dnf
 * ansible.builtin.service
+* ansible.builtin.debug
