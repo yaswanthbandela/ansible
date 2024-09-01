@@ -4,8 +4,11 @@
     Name: "Yaswanth Kumar Bandela"
     exp: 5
   tasks:
-  - name: Intro with variables
+  - name: Intro with overwritting variables
     vars:
       exp: 6
     ansible.builtin.debug:
       msg: "This is {{Name}} ,having {{exp}} years of experinece"
+  - name: Intro without overwritting variables
+    ansible.builtin.debug:
+      msg: "This is {{Name}} ,having {{exp}} years of experinece"    
