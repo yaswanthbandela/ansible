@@ -9,7 +9,8 @@ Date: 2024-09-01
 * ansible.builtin.service
 * ansible.builtin.debug
 
-## Variable Prefrences
+# Variable Prefrences
+## High to Least
 1. Aruguments
 2. Task Level
 3. Variable files
