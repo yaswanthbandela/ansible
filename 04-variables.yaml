@@ -1,9 +1,9 @@
 - name: Variables
   hosts: localhost
   vars:
-    name: "Yaswanth Kumar Bandela"
+    Name: "Yaswanth Kumar Bandela"
     exp: 5
   tasks:
   - name: Intro with variables
     ansible.builtin.debug:
-      msg: "This is {{name}} having {{exp}} years of experinece"
+      msg: "This is {{Name}} ,having {{exp}} years of experinece"
