@@ -1,0 +1,11 @@
+- name: install some packages and remove some packages
+  hosts: web
+  become: true
+  tasks:
+  - name: remove nginx and install nodejs
+    ansible.builtin.dnf:
+      name: "{{item.name}}"
+      state: "{{item.latest}}"
+    loop:
+     - { name: nginx , state: remove }
+     - { name: nodejs , state: latest }
