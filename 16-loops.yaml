@@ -1,9 +1,10 @@
 - name: Install packages
   hosts: web
+  become: true
   tasks:
   - name: install packages
     ansible.builtin.dnf:
-      name: "{{ item }}"
+      name: "{{item}}"
       state: latest
     loop:
      - nginx
