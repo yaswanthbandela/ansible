@@ -8,6 +8,8 @@ Date: 2024-09-01
 * ansible.builtin.dnf
 * ansible.builtin.service
 * ansible.builtin.debug
+* ansible.builtin.command
+* ansible.builtin.shell
 
 # Variable Prefrences
 ## High to Least
