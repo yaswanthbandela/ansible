@@ -5,7 +5,7 @@
   - name: remove nginx and install nodejs
     ansible.builtin.dnf:
       name: "{{item.name}}"
-      state: "{{item.latest}}"
+      state: "{{item.state}}"
     loop:
-     - { name: 'nginx' , state: 'remove' }
+     - { name: 'nginx' , state: 'absent' }
      - { name: 'nodejs' , state: 'latest' }
